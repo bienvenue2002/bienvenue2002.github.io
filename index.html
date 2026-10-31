@@ -146,6 +146,33 @@
       <!-- Carrousel -->
       <div class="carousel-wrap">
         <div class="carousel" id="projects-track">
+          <article class="proj-card proj-featured reveal" data-modal="p7">
+            <div class="proj-top">
+              <div class="proj-icon proj-icon--gold">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                  <path d="M8 6V4h8v2M3 7h18v13H3zM3 12c5 3 13 3 18 0M10 12h4v4h-4z"></path>
+                </svg>
+              </div>
+              <div class="proj-badges-wrap">
+                <span class="proj-badge">Projet personnel</span>
+                <span class="proj-badge proj-badge--green">En ligne</span>
+              </div>
+            </div>
+            <div class="proj-body">
+              <h3 class="proj-title">Élan MSI : du master aux métiers</h3>
+              <p class="proj-desc">Portail de recherche de stages, d’alternances et de métiers liés au Master MSI.
+                France et international, interface en six langues et collecte quotidienne des offres BPCE.</p>
+              <div class="proj-tags">
+                <span class="tag">HTML / CSS</span><span class="tag">JavaScript</span><span class="tag">Python</span><span class="tag">GitHub Actions</span>
+              </div>
+            </div>
+            <div class="proj-footer">
+              <a class="proj-link" href="https://bienvenue2002.github.io/observatoire-emploi-data/" target="_blank" rel="noopener noreferrer">Voir le site ↗</a>
+              <a class="proj-link" href="https://github.com/bienvenue2002/observatoire-emploi-data" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+              <button class="btn btn-sm" type="button" data-modal="p7" aria-label="Détails du projet Élan MSI">Détails</button>
+            </div>
+          </article>
+
           <article class="proj-card proj-featured reveal" data-modal="p1">
             <div class="proj-top">
               <div class="proj-icon proj-icon--gold">
@@ -456,6 +483,29 @@
   </main>
 
   <!-- MODALS -->
+  <dialog class="modal" id="modal-p7" aria-labelledby="modal-p7-title">
+    <div class="modal-inner">
+      <div class="modal-head">
+        <h3 class="modal-title" id="modal-p7-title">Élan MSI : du master aux métiers</h3>
+        <button class="modal-close" type="button" data-close aria-label="Fermer">✕</button>
+      </div>
+      <p class="modal-text">Un projet personnel pour relier les parcours du Master Management des Systèmes
+        d’Information à leurs débouchés et faciliter la recherche de stages et d’alternances.</p>
+      <p class="modal-text">Recherche par métier, pays, contrat et études, avec durée et extraits justificatifs
+        lorsqu’ils sont disponibles. Le portail couvre la France et l’international, propose six langues
+        d’interface et permet d’exporter une sélection en CSV ou JSON.</p>
+      <p class="modal-text">Un pipeline Python prépare les données publiques BPCE ; GitHub Actions automatise
+        leur collecte quotidienne et les contrôles avant publication. Les fiches éditoriales restent à vérifier
+        manuellement et les annonces sont conservées dans leur langue d’origine.</p>
+      <div class="modal-tags"><span class="tag">HTML / CSS</span><span class="tag">JavaScript</span><span class="tag">Python</span><span class="tag">Open Data</span><span class="tag">GitHub Actions</span></div>
+      <div class="modal-actions">
+        <a class="btn btn-primary" href="https://bienvenue2002.github.io/observatoire-emploi-data/" target="_blank" rel="noopener noreferrer">Voir le site ↗</a>
+        <a class="btn btn-outline" href="https://github.com/bienvenue2002/observatoire-emploi-data" target="_blank" rel="noopener noreferrer">Code sur GitHub ↗</a>
+        <button class="btn btn-outline" type="button" data-close>Fermer</button>
+      </div>
+    </div>
+  </dialog>
+
   <dialog class="modal" id="modal-p1">
     <div class="modal-inner">
       <div class="modal-head">
@@ -564,6 +614,6 @@
     </div>
   </dialog>
 
-  <script src="script.js" defer></script>
+  <script src="script.js?v=20261031-elan-msi" defer></script>
 </body>
 </html>

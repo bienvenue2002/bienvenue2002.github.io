@@ -190,7 +190,8 @@
 
   /* ---------- Modals de détails ---------- */
   document.querySelectorAll("[data-modal]").forEach(function (trigger) {
-    trigger.addEventListener("click", function () {
+    trigger.addEventListener("click", function (event) {
+      if (event.target.closest("a") || event.target.closest("[data-modal]") !== trigger) return;
       var modal = document.getElementById("modal-" + trigger.getAttribute("data-modal"));
       if (modal && typeof modal.showModal === "function") {
         modal.showModal();

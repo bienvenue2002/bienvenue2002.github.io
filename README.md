@@ -9,6 +9,8 @@ Une seule page regroupe l'accueil, ma présentation, mes projets, mes expérienc
 
 ## Contenu
 
+Élan MSI figure en première position dans les projets : un portail dédié aux débouchés du Master MSI, avec recherche internationale, interface en six langues et collecte quotidienne BPCE. Sa fiche donne accès au [site public](https://bienvenue2002.github.io/observatoire-emploi-data/) et au [code source](https://github.com/bienvenue2002/observatoire-emploi-data).
+
 - **`index.html`** : structure et contenu.
 - **`style.css`** : couleurs, polices et mise en page adaptée aux différents écrans.
 - **`script.js`** : interactions (machine à écrire, carrousel, fenêtres modales, fond animé).
