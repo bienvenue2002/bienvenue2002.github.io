@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Abra-Bienvenue Tchakah — Management des Systèmes d'Information</title>
+  <meta name="description" content="Portfolio d'Abra-Bienvenue Tchakah — étudiante en M1 Management des systèmes d'information (Grenoble IAE) : projets SI, data, technologies web et expériences.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' fill='%230b0b16'/><text x='50' y='64' font-family='Georgia,serif' font-size='40' font-weight='700' fill='%23c9a84c' text-anchor='middle'>AB</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>@keyframes tw-blink{0%,100%{opacity:1}50%{opacity:0}}</style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <!-- NAVBAR -->
+  <header class="header" id="top">
+    <nav class="nav container" aria-label="Navigation principale">
+      <a class="brand" href="#top">AB<span class="brand-dot">.</span></a>
+      <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span>
+      </button>
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-links">
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#apropos">À propos</a></li>
+          <li><a href="#projets">Projets</a></li>
+          <li><a href="#experiences">Expériences</a></li>
+          <li><a href="#divers">Divers</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a class="btn btn-outline nav-cta" href="assets/cv.pdf" download>CV</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ======== HERO ======== -->
+    <section class="hero" id="accueil">
+      <div class="container hero-container">
+        <div class="hero-left">
+          <div class="hero-pills reveal">
+            <span class="pill">Management SI</span>
+            <span class="pill pill-alt">Data & Décision</span>
+            <span class="pill">Technologies Web</span>
+          </div>
+          <h1 class="hero-title reveal">
+            <span class="hero-title-line">Bonjour,</span>
+            <span class="hero-title-line hero-name"><span id="hero-typewriter"></span><span class="tw-cursor">|</span></span>
+          </h1>
+          <p class="hero-desc reveal">
+            Étudiante en <strong>M1 Management des systèmes d'information</strong> à Grenoble IAE, venue de
+            l'économie et de l'analyse quantitative. J'aime faire le pont entre les besoins métiers
+            et les solutions numériques : bases de données, web et valorisation de la donnée.
+          </p>
+          <div class="hero-actions reveal">
+            <a class="btn btn-primary" href="#projets">Mes projets</a>
+            <a class="btn btn-outline" href="assets/cv.pdf" download>Télécharger le CV</a>
+          </div>
+          <div class="hero-socials reveal">
+            <a class="social-link" href="https://github.com/bienvenue2002" target="_blank" rel="noreferrer">
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+                <path fill="currentColor" d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.49.99.11-.78.42-1.3.76-1.6-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.53.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.65 1.65.24 2.88.12 3.18.76.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.49 5.93.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.82.58A12 12 0 0 0 12 .5Z"></path>
+              </svg>
+              GitHub
+            </a>
+            <a class="social-link" href="https://www.linkedin.com/in/abra-tchakah" target="_blank" rel="noreferrer">
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+                <path fill="currentColor" d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1-.02-5ZM3 9h4v12H3V9Zm7 0h3.8v1.64h.05C14.4 9.6 15.7 8.8 17.6 8.8 21 8.8 21.6 11 21.6 13.9V21h-4v-6.27c0-1.5 0-3.43-2.09-3.43-2.1 0-2.42 1.63-2.42 3.32V21H10V9Z"></path>
+              </svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+        <div class="hero-right reveal">
+          <div class="photo-wrap">
+            <img class="avatar" src="assets/photo.jpg" alt="Photo d'Abra-Bienvenue Tchakah">
+            <div class="photo-accent"></div>
+          </div>
+          <div class="skill-cloud">
+            <span class="sk sk-1">SQL / MySQL</span>
+            <span class="sk sk-2">Python</span>
+            <span class="sk sk-3">R · R Shiny</span>
+            <span class="sk sk-4">Power BI</span>
+            <span class="sk sk-1">HTML / CSS</span>
+            <span class="sk sk-2">Web scraping</span>
+            <span class="sk sk-3">JSON & API</span>
+            <span class="sk sk-4">Open Data</span>
+            <span class="sk sk-1">Économétrie</span>
+            <span class="sk sk-2">Statistiques</span>
+            <span class="sk sk-3">Modélisation de données</span>
+            <span class="sk sk-4">Git & GitHub</span>
+            <span class="sk sk-1">Excel</span>
+            <span class="sk sk-3">Méthodes agiles</span>
+          </div>
+          <div class="hero-scroll-hint" aria-hidden="true">
+            <span>Défiler</span>
+            <span class="scroll-line"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== À PROPOS ======== -->
+    <section class="section" id="apropos">
+      <div class="container">
+        <div class="about-wrap reveal">
+          <div class="about-label">À propos</div>
+          <div class="about-content">
+            <p class="about-lead">
+              Ma double casquette <strong>management des SI</strong> et <strong>économiste</strong> me donne une vision
+              à la fois métier et technique de la donnée.
+            </p>
+            <p class="about-body">
+              En M1 MSI à <strong>Grenoble IAE</strong>, j'apprends à concevoir des bases de données, à développer
+              pour le web (HTML/CSS, Python) et à piloter des projets SI : Business Intelligence, modélisation des
+              processus, méthodes agiles et cloud computing.
+            </p>
+            <p class="about-body">
+              Auparavant, mes études d'économie m'ont appris à interroger les données avec rigueur
+              (<strong>économétrie</strong>, prévision, statistiques) et à construire des outils d'aide à la décision
+              sous R Shiny ou Power BI. Je cherche aujourd'hui un stage de 4 mois en management des systèmes d'information
+              à partir de mars 2027.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== PROJETS ======== -->
+    <section class="section" id="projets">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label">Projets</span>
+          <h2 class="section-title">Explorer, apprendre<br>et construire avec la data.</h2>
+        </div>
+      </div>
+
+      <!-- Carrousel -->
+      <div class="carousel-wrap">
+        <div class="carousel" id="projects-track">
+          <article class="proj-card proj-featured reveal" data-modal="p1">
+            <div class="proj-top">
+              <div class="proj-icon proj-icon--gold">
+                <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+                  <path fill="currentColor" d="M12 1l9 4v6c0 5.55-3.84 10.74-9 12-5.16-1.26-9-6.45-9-12V5l9-4Zm0 2.2L5 6.4v4.6c0 4.55 3.04 8.9 7 10.07V12h2v9.07c3.96-1.16 7-5.52 7-10.07V6.4l-7-3.2Z"></path>
+                </svg>
+              </div>
+              <div class="proj-badges-wrap">
+                <span class="proj-badge">Cours Techno Web</span>
+                <span class="proj-badge proj-badge--purple">Projet d'équipe</span>
+              </div>
+            </div>
+            <div class="proj-body">
+              <h3 class="proj-title">Cybersécurité en France — site web & données ouvertes</h3>
+              <p class="proj-desc">Site HTML/CSS sur la cybersécurité en France à partir de données ouvertes :
+                scraping Python, export CSV, consommation d'API (JSON) et visualisations interactives Flourish.
+                Collaboration sur GitHub.</p>
+              <div class="proj-tags">
+                <span class="tag">Python</span><span class="tag">HTML/CSS</span><span class="tag">API JSON</span><span class="tag">Flourish</span>
+              </div>
+            </div>
+            <div class="proj-footer">
+              <a class="proj-link" href="https://github.com/bienvenue2002" target="_blank" rel="noreferrer">GitHub ↗</a>
+              <button class="btn btn-sm" type="button" data-modal="p1">Détails</button>
+            </div>
+          </article>
+
+          <article class="proj-card reveal" data-modal="p2">
+            <div class="proj-top">
+              <div class="proj-icon proj-icon--teal">
+                <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+                  <path fill="currentColor" d="M12 3c-4.97 0-9 4.03-9 9v5a3 3 0 0 0 3 3h1a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1H5a7 7 0 0 1 14 0h-2a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h1a3 3 0 0 0 3-3v-5c0-4.97-4.03-9-9-9Z"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="proj-body">
+              <h3 class="proj-title">Base relationnelle — gestion de dons et de prothèses</h3>
+              <p class="proj-desc">Conception complète d'une base MySQL : nettoyage Excel, MCD, normalisation
+                en 3e forme normale, puis requêtes de suivi des stocks et des distributions.</p>
+              <div class="proj-tags">
+                <span class="tag">MySQL</span><span class="tag">MCD</span><span class="tag">3FN</span><span class="tag">SQL</span>
+              </div>
+            </div>
+            <div class="proj-footer">
+              <a class="proj-link" href="https://github.com/bienvenue2002" target="_blank" rel="noreferrer">GitHub ↗</a>
+              <button class="btn btn-sm" type="button" data-modal="p2">Détails</button>
+            </div>
+          </article>
+
+          <article class="proj-card reveal" data-modal="p3">
+            <div class="proj-top">
+              <div class="proj-icon proj-icon--coral">
+                <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+                  <path fill="currentColor" d="M3.5 18.5 9 13l4 4 7.5-8.5M21 21H3V3"></path>
+                </svg>
+              </div>
+              <span class="proj-badge proj-badge--green">ARIMA (0,1,1)</span>
+            </div>
+            <div class="proj-body">
+              <h3 class="proj-title">Prévision macroéconomique — séries américaines</h3>
+              <p class="proj-desc">Modélisation ARIMA de séries macroéconomiques américaines (2010-2025) et
+                prévisions à 12 mois, à partir des données FRED.</p>
+              <div class="proj-tags">
+                <span class="tag">R</span><span class="tag">ARIMA</span><span class="tag">FRED</span>
+              </div>
+            </div>
+            <div class="proj-footer">
+              <a class="proj-link" href="https://github.com/bienvenue2002" target="_blank" rel="noreferrer">GitHub ↗</a>
+              <button class="btn btn-sm" type="button" data-modal="p3">Détails</button>
+            </div>
+          </article>
+
+          <article class="proj-card reveal" data-modal="p4">
+            <div class="proj-top">
+              <div class="proj-icon proj-icon--purple">
+                <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+                  <path fill="currentColor" d="M3 5h18v12H3V5Zm7 2v8l6-4-6-4ZM7 19h10v2H7v-2Z"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="proj-body">
+              <h3 class="proj-title">Simulateur de budget étudiant</h3>
+              <p class="proj-desc">Application interactive qui estime le budget mensuel d'un étudiant :
+                simulation du solde jour par jour, détection des risques de découvert et
+                visualisations, conçue sous R Shiny.</p>
+              <div class="proj-tags">
+                <span class="tag">R</span><span class="tag">R Shiny</span>
+              </div>
+            </div>
+            <div class="proj-footer">
+              <a class="proj-link" href="https://github.com/bienvenue2002/Simulateur-budget-etudiant" target="_blank" rel="noreferrer">GitHub ↗</a>
+              <button class="btn btn-sm" type="button" data-modal="p4">Détails</button>
+            </div>
+          </article>
+
+          <article class="proj-card reveal" data-modal="p5">
+            <div class="proj-top">
+              <div class="proj-icon proj-icon--gold">
+                <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+                  <path fill="currentColor" d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="proj-body">
+              <h3 class="proj-title">Marché du travail — Logit, Probit, Tobit</h3>
+              <p class="proj-desc">Modèles microéconométriques sur le marché du travail et analyse
+                salaire-productivité sur un panel Eurostat de 27 pays.</p>
+              <div class="proj-tags">
+                <span class="tag">R</span><span class="tag">Logit</span><span class="tag">Probit</span><span class="tag">Tobit</span>
+              </div>
+            </div>
+            <div class="proj-footer">
+              <a class="proj-link" href="https://github.com/bienvenue2002/salaire-productivite-analyse-ue" target="_blank" rel="noreferrer">GitHub ↗</a>
+              <button class="btn btn-sm" type="button" data-modal="p5">Détails</button>
+            </div>
+          </article>
+
+          <article class="proj-card reveal" data-modal="p6">
+            <div class="proj-top">
+              <div class="proj-icon proj-icon--teal">
+                <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+                  <path fill="currentColor" d="M12 16l-6-6h12l-6 6ZM12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Zm0 16a7 7 0 1 1 0-14 7 7 0 0 1 0 14Z"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="proj-body">
+              <h3 class="proj-title">Interrogation de bases relationnelles — Chinook</h3>
+              <p class="proj-desc">Requêtes SQL sur la base Chinook : extractions, jointures et compréhension
+                des relations entre tables d'une base musicale.</p>
+              <div class="proj-tags">
+                <span class="tag">SQL</span><span class="tag">Jointures</span>
+              </div>
+            </div>
+            <div class="proj-footer">
+              <a class="proj-link" href="https://github.com/bienvenue2002" target="_blank" rel="noreferrer">GitHub ↗</a>
+              <button class="btn btn-sm" type="button" data-modal="p6">Détails</button>
+            </div>
+          </article>
+        </div>
+
+        <div class="carousel-nav">
+          <button class="carousel-btn" id="track-prev" aria-label="Projet précédent">←</button>
+          <div class="carousel-dots" id="track-dots"></div>
+          <button class="carousel-btn" id="track-next" aria-label="Projet suivant">→</button>
+        </div>
+      </div>
+
+      <!-- Autres projets -->
+      <div class="container">
+        <div class="voir-plus-wrap reveal">
+          <button class="voir-plus-btn" id="voir-plus-btn" type="button">
+            <span id="voir-plus-label">Voir tous les projets</span>
+            <svg id="voir-plus-icon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true">
+              <path fill="currentColor" d="M12 16l-6-6h12z"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="projects-more hidden" id="projects-more">
+          <div class="mini-grid">
+            <article class="mini-card reveal">
+              <h4 class="mini-title">Tableau de bord Power BI</h4>
+              <div class="mini-tags"><span class="tag">Power BI</span><span class="tag">Data viz</span></div>
+              <a class="proj-link" href="https://github.com/bienvenue2002" target="_blank" rel="noreferrer">GitHub ↗</a>
+            </article>
+            <article class="mini-card reveal">
+              <h4 class="mini-title">Ce portfolio — site vitrine</h4>
+              <div class="mini-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span></div>
+              <a class="proj-link" href="https://github.com/bienvenue2002/bienvenue2002.github.io" target="_blank" rel="noreferrer">GitHub ↗</a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== EXPÉRIENCES ======== -->
+    <section class="section" id="experiences">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label">Expériences</span>
+          <h2 class="section-title">Parcours.</h2>
+        </div>
+        <div class="xp-list">
+          <article class="xp-card reveal">
+            <div class="xp-left">
+              <div class="xp-logo">BETA</div>
+              <div class="xp-connector"></div>
+            </div>
+            <div class="xp-right">
+              <div class="xp-head">
+                <div>
+                  <h3 class="xp-company">BETA — Université de Strasbourg <span class="badge-cac">Recherche</span></h3>
+                  <p class="xp-role">Stagiaire de recherche — Propriété intellectuelle & IA générative</p>
+                  <p class="xp-meta">Strasbourg · Janv. – Avr. 2026 <span class="badge-alt">Stage</span></p>
+                </div>
+              </div>
+              <ul class="xp-list-items">
+                <li>Revue de littérature sur <strong>l'économie du droit d'auteur</strong>.</li>
+                <li>Conception d'un protocole d'<strong>économie expérimentale</strong> sur l'authenticité des œuvres
+                  et le risque d'imitation à l'ère de l'IA générative.</li>
+              </ul>
+              <div class="xp-chips">
+                <span class="tag">Recherche</span><span class="tag">Économie expérimentale</span><span class="tag">IA générative</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="xp-card reveal">
+            <div class="xp-left">
+              <div class="xp-logo">AM</div>
+              <div class="xp-connector"></div>
+            </div>
+            <div class="xp-right">
+              <div class="xp-head">
+                <div>
+                  <h3 class="xp-company">Amorino</h3>
+                  <p class="xp-role">Employée polyvalente</p>
+                  <p class="xp-meta">Strasbourg puis Grenoble · En cours <span class="badge-alt">CDI étudiant</span></p>
+                </div>
+              </div>
+              <ul class="xp-list-items">
+                <li>Boutique de 200 à 600 clients par jour, chiffre d'affaires quotidien de 2 000 à 9 000 €
+                  selon la saison et la météo.</li>
+                <li>Suivi de la fréquentation et contribution à la <strong>planification des équipes</strong>
+                  avec l'outil Combo, pour adapter les effectifs aux pics d'activité.</li>
+                <li>Vente, encaissement et maintien de la qualité de service en forte affluence.</li>
+              </ul>
+              <div class="xp-chips">
+                <span class="tag">Relation client</span><span class="tag">Organisation</span><span class="tag">Travail en équipe</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="xp-card reveal">
+            <div class="xp-left">
+              <div class="xp-logo xp-logo--sm">CP</div>
+            </div>
+            <div class="xp-right">
+              <div class="xp-head">
+                <div>
+                  <h3 class="xp-company">Crousti Pain</h3>
+                  <p class="xp-role">Employée polyvalente — responsabilités de manager</p>
+                  <p class="xp-meta">Clermont-Ferrand <span class="badge-alt">Expérience</span></p>
+                </div>
+              </div>
+              <ul class="xp-list-items">
+                <li>Coordination de l'équipe et du point de vente : ouvertures, gestion des commandes
+                  et suivi de la qualité de service.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== DIVERS ======== -->
+    <section class="section" id="divers">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label">Divers</span>
+          <h2 class="section-title">En dehors des cours.</h2>
+        </div>
+        <div class="divers-grid">
+          <div class="divers-card reveal">
+            <div class="divers-icon">
+              <svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path fill="currentColor" d="M12 3v10.55A4 4 0 1 0 14 17V7h4V3h-6Z"/></svg>
+            </div>
+            <h3 class="divers-title">Gospel</h3>
+            <p class="divers-desc">Choriste depuis 12 ans. La musique m'apprend l'écoute et l'harmonie d'ensemble.</p>
+          </div>
+          <div class="divers-card reveal">
+            <div class="divers-icon">
+              <svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path fill="currentColor" d="M12 21s-8-5.5-8-11a5 5 0 0 1 8-4 5 5 0 0 1 8 4c0 5.5-8 11-8 11Z"/></svg>
+            </div>
+            <h3 class="divers-title">Engagement</h3>
+            <p class="divers-desc">Bénévole à la banque alimentaire : collecte et tri de denrées pour les familles
+              dans le besoin.</p>
+          </div>
+          <div class="divers-card reveal">
+            <div class="divers-icon">
+              <svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path fill="currentColor" d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5Z"/></svg>
+            </div>
+            <h3 class="divers-title">Voyages</h3>
+            <p class="divers-desc">Voyageuse curieuse : chaque destination est une nouvelle façon de voir
+              le monde et ses cultures.</p>
+          </div>
+          <div class="divers-card reveal">
+            <div class="divers-icon">
+              <svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path fill="currentColor" d="M11 2a7 7 0 0 0-7 7c0 2 .8 3.6 2 4.8V16a1 1 0 0 0 1 1h1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2h1a1 1 0 0 0 1-1v-2.2A6.98 6.98 0 0 0 18 9a7 7 0 0 0-7-7Zm0 3a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4Z"/></svg>
+            </div>
+            <h3 class="divers-title">Cuisine</h3>
+            <p class="divers-desc">Repas togolais pour plus de 100 personnes lors d'événements communautaires :
+              générosité et transmission.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== CONTACT ======== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label">Contact</span>
+          <h2 class="section-title">Parlons-nous.</h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-card reveal">
+            <p class="contact-label">Email</p>
+            <a class="contact-email" href="mailto:bienvenuetchakah@gmail.com">bienvenuetchakah@gmail.com</a>
+            <div class="contact-actions">
+              <a class="btn btn-primary" href="mailto:bienvenuetchakah@gmail.com">M'écrire</a>
+              <button class="btn btn-outline" type="button" id="copy-email" data-email="bienvenuetchakah@gmail.com">Copier</button>
+            </div>
+            <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
+          </div>
+          <div class="contact-card reveal">
+            <p class="contact-label">Liens</p>
+            <a class="contact-link-item" href="https://github.com/bienvenue2002" target="_blank" rel="noreferrer">
+              <span class="contact-link-name">GitHub</span>
+              <span class="contact-link-url">github.com/bienvenue2002 ↗</span>
+            </a>
+            <a class="contact-link-item" href="https://www.linkedin.com/in/abra-tchakah" target="_blank" rel="noreferrer">
+              <span class="contact-link-name">LinkedIn</span>
+              <span class="contact-link-url">linkedin.com/in/abra-tchakah ↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer container">
+      <p>© <span id="year">2026</span> Abra-Bienvenue Tchakah</p>
+      <a href="#top" class="footer-back">Haut de page ↑</a>
+    </footer>
+  </main>
+
+  <!-- MODALS -->
+  <dialog class="modal" id="modal-p1">
+    <div class="modal-inner">
+      <div class="modal-head">
+        <h3 class="modal-title">Cybersécurité en France — site web & données ouvertes</h3>
+        <button class="modal-close" type="button" data-close aria-label="Fermer">✕</button>
+      </div>
+      <p class="modal-text">Projet d'équipe du cours « Introduction aux technologies Web » (M1 MSI, Grenoble IAE).
+        Un site HTML/CSS qui valorise des données ouvertes sur la cybersécurité en France : collecte par
+        web scraping en Python, export CSV, consommation d'une API au format JSON et visualisations
+        interactives réalisées avec Flourish. Collaboration et versioning sur GitHub.</p>
+      <div class="modal-tags"><span class="tag">Python</span><span class="tag">HTML/CSS</span><span class="tag">API JSON</span><span class="tag">Flourish</span><span class="tag">GitHub</span></div>
+      <div class="modal-actions">
+        <a class="btn btn-outline" href="https://github.com/bienvenue2002" target="_blank" rel="noreferrer">GitHub</a>
+        <button class="btn btn-primary" type="button" data-close>Fermer</button>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="modal" id="modal-p2">
+    <div class="modal-inner">
+      <div class="modal-head">
+        <h3 class="modal-title">Base relationnelle — gestion de dons et de prothèses</h3>
+        <button class="modal-close" type="button" data-close aria-label="Fermer">✕</button>
+      </div>
+      <p class="modal-text">Projet d'équipe de conception de base de données : analyse et nettoyage de données
+        Excel, conception du modèle conceptuel de données, normalisation en 3e forme normale, création
+        de la base MySQL puis requêtes de suivi des stocks et des distributions.</p>
+      <div class="modal-tags"><span class="tag">MySQL</span><span class="tag">MCD</span><span class="tag">3FN</span><span class="tag">SQL</span></div>
+      <div class="modal-actions">
+        <a class="btn btn-outline" href="https://github.com/bienvenue2002" target="_blank" rel="noreferrer">GitHub</a>
+        <button class="btn btn-primary" type="button" data-close>Fermer</button>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="modal" id="modal-p3">
+    <div class="modal-inner">
+      <div class="modal-head">
+        <h3 class="modal-title">Prévision macroéconomique — séries américaines</h3>
+        <button class="modal-close" type="button" data-close aria-label="Fermer">✕</button>
+      </div>
+      <p class="modal-text">Modélisation ARIMA (0,1,1) de séries macroéconomiques américaines sur la période
+        2010-2025, à partir des données de la Federal Reserve (FRED), avec prévisions à 12 mois et
+        évaluation de la qualité du modèle.</p>
+      <div class="modal-tags"><span class="tag">R</span><span class="tag">ARIMA</span><span class="tag">FRED</span><span class="tag">Prévision</span></div>
+      <div class="modal-actions">
+        <a class="btn btn-outline" href="https://github.com/bienvenue2002" target="_blank" rel="noreferrer">GitHub</a>
+        <button class="btn btn-primary" type="button" data-close>Fermer</button>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="modal" id="modal-p4">
+    <div class="modal-inner">
+      <div class="modal-head">
+        <h3 class="modal-title">Simulateur de budget étudiant</h3>
+        <button class="modal-close" type="button" data-close aria-label="Fermer">✕</button>
+      </div>
+      <p class="modal-text">Outil interactif sous R Shiny qui permet d'estimer automatiquement le budget mensuel
+        d'un étudiant : simulation de l'évolution du solde jour par jour, identification des risques de
+        découvert et visualisation des résultats.</p>
+      <div class="modal-tags"><span class="tag">R</span><span class="tag">R Shiny</span><span class="tag">Data viz</span></div>
+      <div class="modal-actions">
+        <a class="btn btn-outline" href="https://github.com/bienvenue2002/Simulateur-budget-etudiant" target="_blank" rel="noreferrer">GitHub</a>
+        <button class="btn btn-primary" type="button" data-close>Fermer</button>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="modal" id="modal-p5">
+    <div class="modal-inner">
+      <div class="modal-head">
+        <h3 class="modal-title">Marché du travail — Logit, Probit, Tobit</h3>
+        <button class="modal-close" type="button" data-close aria-label="Fermer">✕</button>
+      </div>
+      <p class="modal-text">Modèles microéconométriques appliqués au marché du travail : modèles à variable
+        dichotomique (Logit, Probit) et modèle Tobit, complétés par une analyse économétrique du lien
+        salaire-productivité dans l'UE (2000-2025) : étude par périodes, OLS, effets fixes et
+        variables instrumentales sous R.</p>
+      <div class="modal-tags"><span class="tag">R</span><span class="tag">Logit</span><span class="tag">Probit</span><span class="tag">Tobit</span><span class="tag">Eurostat</span></div>
+      <div class="modal-actions">
+        <a class="btn btn-outline" href="https://github.com/bienvenue2002/salaire-productivite-analyse-ue" target="_blank" rel="noreferrer">GitHub</a>
+        <button class="btn btn-primary" type="button" data-close>Fermer</button>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="modal" id="modal-p6">
+    <div class="modal-inner">
+      <div class="modal-head">
+        <h3 class="modal-title">Interrogation de bases relationnelles — Chinook</h3>
+        <button class="modal-close" type="button" data-close aria-label="Fermer">✕</button>
+      </div>
+      <p class="modal-text">Exercices d'interrogation de bases relationnelles sur la base Chinook : extractions
+        de données, jointures multi-tables et compréhension des contraintes d'intégrité.</p>
+      <div class="modal-tags"><span class="tag">SQL</span><span class="tag">Jointures</span><span class="tag">MySQL</span></div>
+      <div class="modal-actions">
+        <a class="btn btn-outline" href="https://github.com/bienvenue2002" target="_blank" rel="noreferrer">GitHub</a>
+        <button class="btn btn-primary" type="button" data-close>Fermer</button>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
