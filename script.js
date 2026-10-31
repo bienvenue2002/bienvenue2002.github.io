@@ -7,7 +7,7 @@
 
   /* ---------- Machine à écrire (hero) ---------- */
   var twEl = document.getElementById("hero-typewriter");
-  var twText = "Abra-Bienvenue.";
+  var twText = "Abra TCHAKAH";
   var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   function typeWriter() {
@@ -185,28 +185,6 @@
           d.classList.toggle("active", i === best);
         });
       }, 80);
-    });
-  }
-
-  /* ---------- Voir tous les projets ---------- */
-  var voirPlusBtn = document.getElementById("voir-plus-btn");
-  var voirPlusLabel = document.getElementById("voir-plus-label");
-  var projectsMore = document.getElementById("projects-more");
-
-  if (voirPlusBtn && projectsMore) {
-    voirPlusBtn.addEventListener("click", function () {
-      var open = projectsMore.classList.toggle("hidden") === false;
-      voirPlusBtn.classList.toggle("open", open);
-      if (voirPlusLabel) {
-        voirPlusLabel.textContent = open
-          ? "Réduire les projets"
-          : "Voir tous les projets";
-      }
-      if (open) {
-        projectsMore.querySelectorAll(".reveal").forEach(function (el) {
-          el.classList.add("is-visible");
-        });
-      }
     });
   }
 
